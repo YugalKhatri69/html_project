@@ -1,0 +1,410 @@
+
+/* -----Reset----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease-in;
+  }
+  
+  li {
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+  }
+  
+  
+   li>a:hover {
+    text-decoration: underline;
+    transition: all 0.25s ease-in;
+    text-decoration-color: lightcoral;
+    text-decoration-thickness: 3px;
+  } 
+  a.home-link.active {
+    color: lightcoral; 
+    text-decoration: underline; 
+    background-color: inherit; 
+    text-underline-position: under;
+    text-decoration-thickness: 3px;
+  }
+  
+  /* -----Header----- */
+  header {
+    width: 100%;
+    height: 75px; 
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box; 
+  }
+  
+  /* logo */
+  
+  .logo {
+    z-index: 100;
+    text-align: center;
+  
+  } 
+  
+  .logo_img {
+    width: 110px;
+    margin-bottom: 13px;
+  }
+  
+  /* Menu Links */
+header .menu {
+    max-width: 100%;
+    position: relative;
+    z-index: 101;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header .menu li {
+    margin: 0 15px;
+    padding: 10px 20px;
+  }
+  
+  
+  header label i {
+    font-size: 1.5rem;
+    color: #000;
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+  
+.container {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.container h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.beverages-header {
+    text-align: left;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 20px 0;
+    padding-left: 20px;}
+
+.menu-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.menu-item h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.menu-item p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.rating {
+    text-align: center;
+    font-size: 1.2em;
+    color: #f39c12;
+}
+
+.clear {
+    clear: both;
+}
+
+.description {
+    margin-top: 10px;
+}
+
+footer {
+  color: #FFFFFF;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact {
+  background-color: #131A22 ;
+  color: #FFFFFF;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  align-items: center;
+  justify-content: center; 
+}
+
+.contact p{
+  word-spacing:2px;
+  margin: 5px;
+  padding:3px ;
+  list-style-type: none;
+  color: white;
+  
+}
+
+.contact_text {
+  color: #D81159;
+}
+
+.contact_text:hover, .contact_text p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.email-text {
+  color: #D81159;
+}
+
+.email-text:hover, .contact_text p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 20px;
+  background-color: #131A22;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.social .logo-img {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.facebook_logo, .instagram_logo, .twitter_logo{
+  width: 35px;
+  margin: 0 10px;
+}
+
+.credit p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+  @media screen and (max-width: 600px) {
+    
+    /* Header */
+  header {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+  }
+
+  header .logo_img {
+    width: 80px;
+    margin-bottom: 5px;
+  }
+
+  header .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .menu li {
+    margin: 10px 0;
+    padding: 5px 10px;
+  }
+    
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 90%;
+    }
+
+      /* Footer */
+  .social {
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+
+  .facebook_logo, .instagram_logo, .twitter_logo{
+    max-width: 30px;
+    margin: 5px;
+  }
+
+  .contact{
+    padding: 5px 0;
+  }
+
+  .contact p, .credit p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Tablets (600px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  /* Header */
+  header {
+    padding: 20px 50px;
+    height: auto;
+  }
+
+  header .logo_img {
+    width: 90px;
+  }
+
+  header .menu {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  header .menu li {
+    margin: 0 10px;
+    padding: 10px 15px;
+  }
+
+   /* Footer */
+   .social {
+    padding: 15px;
+  }
+
+  .facebook_logo, .instagram_logo, .twitter_logo{
+    max-width: 35px;
+  }
+
+  .contact p, .credit p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Laptops (900px to 1200px) */
+@media (min-width: 901px) and (max-width: 1200px) {
+  /* Header */
+  header {
+    padding: 0px 100px;
+    height: 80px;
+  }
+
+  header .logo_img {
+    width: 100px;
+  }
+
+  header .menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header .menu li {
+    margin: 0 15px;
+    padding: 10px 20px;
+  }
+
+   /* Footer */
+   .social {
+    padding: 20px;
+  }
+
+  .facebook_logo, .instagram_logo, .twitter_logo{
+    max-width: 38px;
+  }
+
+  .contact p, .credit p {
+    font-size: 1rem;
+  }
+}
+
+/* Desktops (1200px and above) */
+@media (min-width: 1201px) {
+  /* Header */
+  header {
+    padding: 20px 150px;
+  }
+
+  header .logo_img {
+    width: 110px;
+  }
+
+  header .menu {
+    justify-content: space-between;
+  }
+
+  header .menu li {
+    margin: 0 20px;
+    padding: 10px 25px;
+  }
+
+  
+  /* Footer */
+  .social {
+    padding: 25px;
+  }
+
+  .facebook_logo, .instagram_logo, .twitter_logo{
+    max-width: 40px;
+  }
+
+  .contact p, .credit p {
+    font-size: 1.1rem;
+  }
+}
+
+
